@@ -2,7 +2,7 @@ package CGI::FCKeditor;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new {
 	my $class = shift;
@@ -141,19 +141,19 @@ __END__
 
 =head1 NAME
 
-FCKeditor - FCKeditor For OOP Module
+CGI::FCKeditor - FCKeditor For OOP Module
 
 =head1 SYNOPSIS
 
-  use FCKeditor;
+  use CGI::FCKeditor;
 
   #Simple
-  my $fck = FCKeditor->new();
+  my $fck = CGI::FCKeditor->new();
   $fck->set_base('/FCKeditor/');  #FCKeditor Directory
   my $form_input_source = $fck->fck;    #output html source
   
   #Basic
-  my $fck = FCKeditor->new();
+  my $fck = CGI::FCKeditor->new();
   $fck->set_name('fck');	#HTML <input name>(default 'fck')
   $fck->set_base('/FCKeditor/');	#FCKeditor Directory
   $fck->set_set('Basic');	#FCKeditor Style(default 'Default')
@@ -161,19 +161,19 @@ FCKeditor - FCKeditor For OOP Module
   my $form_input_source = $fck->fck;	#output html source
   
   #Short
-  my $fck = FCKeditor->new('fck','/FCKeditor/','Basic','READ ME');
+  my $fck = CGI::FCKeditor->new('fck','/FCKeditor/','Basic','READ ME');
   my $form_input_source = $fck->fck;
 
 =head1 DESCRIPTION
 
-FCKeditor.pm is FCKeditor(http://www.fckeditor.net/) Controller for Perl OOP.
+CGI::FCKeditor is FCKeditor(http://www.fckeditor.net/) Controller for Perl OOP.
 FCKeditor(http://www.fckeditor.net/) is necessary though it is natural.
 
 =head1 METHODS
 
 =head2 new
 
-  my $fck = FCKeditor->new();
+  my $fck = CGI::FCKeditor->new();
 
 Constructs instance.
 
